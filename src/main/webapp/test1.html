@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Badge
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/2
+  Time(创建时间)： 14:23
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <el-badge :value="68">
+        <el-button type="primary">提示按钮</el-button>
+    </el-badge>
+    <br>
+    <br>
+    <el-badge :value="25" type="primary">
+        <el-button type="primary">提示按钮</el-button>
+    </el-badge>
+    <br>
+    <br>
+    <el-badge :value="6" type="warning">
+        <el-button type="primary">提示按钮</el-button>
+    </el-badge>
+    <br>
+    <br>
+    <el-badge :value="9" type="danger">
+        <el-button type="primary">提示按钮</el-button>
+    </el-badge>
+    <br>
+    <br>
+    <el-badge :value="46" type="success">
+        <el-button type="primary">提示按钮</el-button>
+    </el-badge>
+    <br>
+    <br>
+    <el-dropdown trigger="click">
+  <span class="el-dropdown-link">
+    点我查看<i class="el-icon-caret-bottom el-icon--right"></i>
+  </span>
+        <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item class="clearfix">
+                评论
+                <el-badge class="mark" :value="12"></el-badge>
+            </el-dropdown-item>
+            <el-dropdown-item class="clearfix">
+                回复
+                <el-badge class="mark" :value="3"></el-badge>
+            </el-dropdown-item>
+        </el-dropdown-menu>
+    </el-dropdown>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+
+</body>
+</html>
